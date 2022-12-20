@@ -1,0 +1,11 @@
+<project outputDir="C:\Users\Kyuzo\Desktop\Client\Evolve\obj\Release\Confused" baseDir="C:\Users\Kyuzo\Desktop\Client\Evolve\obj\Release" xmlns="http://confuser.codeplex.com">
+  <module path="..\..\Output\TestMod\Evolve.dll">
+    <rule pattern="true">
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="harden" />
+      <protection id="ref proxy" />
+      <protection id="resources" />
+    </rule>
+  </module>
+</project>
