@@ -7,7 +7,7 @@ namespace HexedLoader
     {
         public static void RegisterMod(Type mod)
         {
-            foreach (MethodInfo methodInfo in mod.GetMethods(BindingFlags.Instance | BindingFlags.Public))
+            foreach (MethodInfo methodInfo in mod.GetMethods(BindingFlags.Static | BindingFlags.NonPublic))
             {
                 switch (methodInfo.Name)
                 {

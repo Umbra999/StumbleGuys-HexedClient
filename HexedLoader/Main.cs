@@ -1,6 +1,5 @@
 ﻿using HexedLoader.Server;
 using HexedLoader.Wrapper;
-using MelonLoader;
 using System;
 using System.Linq;
 using System.Reflection;
@@ -31,7 +30,7 @@ namespace HexedLoader
                     return;
                 }
 
-                Type Target = MappedAssembly.GetTypes().Where(x => x.Name == "RemoteLoader")?.FirstOrDefault();
+                Type Target = MappedAssembly.GetTypes().Where(x => x.Name == "RemoteLoader" && x.GetMethods().Where(y => y.Name == "OnApplicationStart") != null)?.First();
                 if (Target == null)
                 {
                     Logger.LogError("Failed to find Entry");
