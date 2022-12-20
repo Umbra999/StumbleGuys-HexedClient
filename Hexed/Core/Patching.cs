@@ -5,6 +5,7 @@ using Hexed.Wrappers;
 using MelonLoader;
 using Photon.Realtime;
 using System;
+using System.Linq;
 using System.Reflection;
 using TJR;
 using UnhollowerBaseLib;
@@ -86,7 +87,7 @@ namespace Hexed.Core
             CreatePatch(AccessTools.Property(typeof(SteamHandler), "UserNickname").GetMethod, null, GetPatch(nameof(SteamIdPrefix)));
             CreatePatch(typeof(LoadBalancingPeer).GetFromMethod(nameof(LoadBalancingPeer.OpRaiseEvent)), GetPatch(nameof(OpRaiseEventPrefix)));
             CreatePatch(typeof(QuantumLoadBalancingClient).GetFromMethod(nameof(QuantumLoadBalancingClient.OnEvent)), GetPatch(nameof(OnEventPrefix)));
-            CreatePatch(typeof(PhotonPeer).GetFromMethod(nameof(PhotonPeer.SendOperation)), GetPatch(nameof(SendOperationPrefix)));
+            CreatePatch(typeof(PhotonPeer).GetMethods().Where(m => m.Name == "SendOperation").First(), GetPatch(nameof(SendOperationPrefix)));
             CreatePatch(typeof(FirebaseAnalyticsSender).GetFromMethod(nameof(FirebaseAnalyticsSender.Initialize)), GetPatch(nameof(ReturnFalsePrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnMasterClientSwitched)), GetPatch(nameof(OnMasterClientSwitchedPrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerEnteredRoom)), GetPatch(nameof(OnPlayerEnteredRoomPrefix)));

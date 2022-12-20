@@ -1,8 +1,5 @@
-﻿using Hexed.Core;
-using Hexed.Modules;
-using Hexed.Wrappers;
-using MelonLoader;
-using System;
+﻿using MelonLoader;
+
 namespace Hexed
 {
     public class LocalLoader : MelonMod

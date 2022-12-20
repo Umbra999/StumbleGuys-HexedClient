@@ -1,6 +1,6 @@
 ﻿namespace Hexed.Loader
 {
-    internal class RemoteLoader
+    public class RemoteLoader
     {
         private static void OnApplicationStart()
         {
