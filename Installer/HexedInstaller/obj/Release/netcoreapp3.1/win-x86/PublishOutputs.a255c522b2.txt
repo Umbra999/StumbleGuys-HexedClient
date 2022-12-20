@@ -1,0 +1,2 @@
+C:\Users\NotUmbra\Desktop\FadeAwayInstaller\FadeAwayInstaller\bin\publish\LunaRInstaller.pdb
+C:\Users\NotUmbra\Desktop\FadeAwayInstaller\FadeAwayInstaller\bin\publish\LunaRInstaller.exe

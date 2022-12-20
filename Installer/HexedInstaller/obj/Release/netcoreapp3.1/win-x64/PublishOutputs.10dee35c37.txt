@@ -1,0 +1,2 @@
+C:\Users\Umbra\Documents\GitHub\StumbleGuys-HexedClient\Installer\HexedInstaller\bin\Release\net7.0\publish\win-x64\HexedInstaller.pdb
+C:\Users\Umbra\Documents\GitHub\StumbleGuys-HexedClient\Installer\HexedInstaller\bin\Release\net7.0\publish\win-x64\HexedInstaller.exe

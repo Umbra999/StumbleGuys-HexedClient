@@ -1,0 +1,2 @@
+D:\Daten\Backup\LunaRInstaller\FadeAwayInstaller\bin\publish\LunaRInstaller.pdb
+D:\Daten\Backup\LunaRInstaller\FadeAwayInstaller\bin\publish\LunaRInstaller.exe

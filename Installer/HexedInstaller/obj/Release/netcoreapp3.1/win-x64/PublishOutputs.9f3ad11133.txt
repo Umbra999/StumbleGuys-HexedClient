@@ -1,0 +1,2 @@
+D:\Daten\Coding\VRC\LunaRInstaller\FadeAwayInstaller\bin\Release\netcoreapp3.1\win-x64\app.publish\HexedInstaller.pdb
+D:\Daten\Coding\VRC\LunaRInstaller\FadeAwayInstaller\bin\Release\netcoreapp3.1\win-x64\app.publish\HexedInstaller.exe

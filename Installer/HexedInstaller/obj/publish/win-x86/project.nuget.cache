@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "rQ/q8tHX2AQ/qpL4YJjXgc0WYv8yI5yrVmueyXTWQhYyALPEEU3F5rPLhi3gMlPz4kSSPew4iPETwJBc5qqoVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NotUmbra\\Desktop\\FadeAwayInstaller\\FadeAwayInstaller\\FadeAwayInstaller.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.20\\microsoft.netcore.app.runtime.win-x86.3.1.20.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.20\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.20.nupkg.sha512",
+    "C:\\Users\\NotUmbra\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.20\\microsoft.aspnetcore.app.runtime.win-x86.3.1.20.nupkg.sha512"
+  ],
+  "logs": []
+}
