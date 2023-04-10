@@ -4,22 +4,22 @@
     {
         private static void OnApplicationStart()
         {
-            EventHandler.OnApplicationStart();
+            Load.OnApplicationStart();
         }
 
         private static void OnUpdate()
         {
-            EventHandler.OnUpdate();
+            Load.OnUpdate();
         }
 
         private static void OnGUI()
         {
-            EventHandler.OnGUI();
+            Load.OnGUI();
         }
 
         private static void OnApplicationQuit()
         {
-            EventHandler.OnApplicationQuit();
+            Load.OnApplicationQuit();
         }
     }
 }

@@ -1,12 +1,14 @@
 ﻿using Hexed.Core;
 using Hexed.Wrappers;
+using System;
 using UnityEngine;
 
 namespace Hexed.Modules
 {
-    internal class GUIHandler
+    internal class GUIHandler : MonoBehaviour
     {
-        public static void Update()
+        public GUIHandler(IntPtr ptr) : base(ptr) { }
+        public void OnGUI()
         {
             if (!InternalSettings.GUIEnabled) return;
 

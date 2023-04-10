@@ -6,22 +6,22 @@ namespace Hexed
     {
         public override void OnApplicationStart()
         {
-            Loader.EventHandler.OnApplicationStart();
+            Loader.Load.OnApplicationStart();
         }
 
         public override void OnUpdate()
         {
-            Loader.EventHandler.OnUpdate();
+            Loader.Load.OnUpdate();
         }
 
         public override void OnGUI()
         {
-            Loader.EventHandler.OnGUI();
+            Loader.Load.OnGUI();
         }
 
         public override void OnApplicationQuit()
         {
-            Loader.EventHandler.OnApplicationQuit();
+            Loader.Load.OnApplicationQuit();
         }
     }
 }

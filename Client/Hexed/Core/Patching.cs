@@ -1,14 +1,17 @@
 ﻿using ExitGames.Client.Photon;
+using GameAnalyticsSDK;
 using HarmonyLib;
+using Hexed.HexedServer;
 using Hexed.Modules;
 using Hexed.Wrappers;
 using MelonLoader;
 using Photon.Realtime;
+using Stumble;
 using System;
 using System.Linq;
 using System.Reflection;
-using TJR;
 using UnhollowerBaseLib;
+using Unity.Services.Analytics;
 using UnityEngine;
 
 namespace Hexed.Core
@@ -55,22 +58,22 @@ namespace Hexed.Core
 
         public static IntPtr FakeModel()
         {
-            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Utils.RandomString(Utils.Random.Next(13, 16)))).Pointer;
+            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Encryption.RandomString(Encryption.Random.Next(13, 16)))).Pointer;
         }
 
         public static IntPtr FakeName()
         {
-            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp("DESKTOP-" + Utils.RandomString(Utils.Random.Next(7, 9)))).Pointer;
+            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp("DESKTOP-" + Encryption.RandomString(Encryption.Random.Next(7, 9)))).Pointer;
         }
 
         public static IntPtr FakeGPU()
         {
-            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Utils.RandomString(Utils.Random.Next(14, 17)))).Pointer;
+            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Encryption.RandomString(Encryption.Random.Next(14, 17)))).Pointer;
         }
 
         public static IntPtr FakeCPU()
         {
-            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Utils.RandomString(Utils.Random.Next(15, 19)))).Pointer;
+            return new Il2CppSystem.Object(IL2CPP.ManagedStringToIl2Cpp(Encryption.RandomString(Encryption.Random.Next(15, 19)))).Pointer;
         }
 
         public static IntPtr FakeHWID()
@@ -80,21 +83,37 @@ namespace Hexed.Core
 
         public static unsafe void ApplyPatches()
         {
+            // Analytics
+            CreatePatch(typeof(Backend).GetFromMethod(nameof(Backend.CheatingDetected)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(FirebaseAnalyticsSender).GetFromMethod(nameof(FirebaseAnalyticsSender.Initialize)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(FirebaseAnalyticsSender).GetFromMethod(nameof(FirebaseAnalyticsSender.Send)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(FirebaseAnalyticsSender).GetFromMethod(nameof(FirebaseAnalyticsSender.SetUserId)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.Awake)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.OnApplicationQuit)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.StartSession)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.StartTimer)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.EndSession)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.Initialize)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(GameAnalytics).GetFromMethod(nameof(GameAnalytics.InternalInitialize)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(AnalyticsLifetime).GetFromMethod(nameof(AnalyticsLifetime.Awake)), GetPatch(nameof(ReturnFalsePrefix)));
+            CreatePatch(typeof(AnalyticsLifetime).GetFromMethod(nameof(AnalyticsLifetime)), GetPatch(nameof(ReturnFalsePrefix)));
+
+            // Props / Fields
             CreatePatch(AccessTools.Property(typeof(PhotonPeer), "RoundTripTime").GetMethod, null, GetPatch(nameof(RoundTripTimePrefix)));
             CreatePatch(AccessTools.Property(typeof(PhotonPeer), "RoundTripTimeVariance").GetMethod, null, GetPatch(nameof(RoundTripTimeVariancePrefix)));
             CreatePatch(AccessTools.Property(typeof(Time), "smoothDeltaTime").GetMethod, null, GetPatch(nameof(smoothDeltaTimePrefix)));
             CreatePatch(AccessTools.Property(typeof(SteamHandler), "UserIDString").GetMethod, null, GetPatch(nameof(SteamIdPrefix)));
             CreatePatch(AccessTools.Property(typeof(SteamHandler), "UserNickname").GetMethod, null, GetPatch(nameof(SteamIdPrefix)));
+
+            // Methods
             CreatePatch(typeof(LoadBalancingPeer).GetFromMethod(nameof(LoadBalancingPeer.OpRaiseEvent)), GetPatch(nameof(OpRaiseEventPrefix)));
             CreatePatch(typeof(QuantumLoadBalancingClient).GetFromMethod(nameof(QuantumLoadBalancingClient.OnEvent)), GetPatch(nameof(OnEventPrefix)));
             CreatePatch(typeof(PhotonPeer).GetMethods().Where(m => m.Name == "SendOperation").First(), GetPatch(nameof(SendOperationPrefix)));
-            CreatePatch(typeof(FirebaseAnalyticsSender).GetFromMethod(nameof(FirebaseAnalyticsSender.Initialize)), GetPatch(nameof(ReturnFalsePrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnMasterClientSwitched)), GetPatch(nameof(OnMasterClientSwitchedPrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerEnteredRoom)), GetPatch(nameof(OnPlayerEnteredRoomPrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerLeftRoom)), GetPatch(nameof(OnPlayerLeftRoomPrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerPropertiesUpdate)), GetPatch(nameof(OnPlayerPropertiesUpdatePrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnRoomPropertiesUpdate)), GetPatch(nameof(OnRoomPropertiesUpdatePrefix)));
-            CreatePatch(typeof(Backend).GetFromMethod(nameof(Backend.CheatingDetected)), GetPatch(nameof(ReturnFalsePrefix)));
         }
 
         private static void AllowBoolPostfix(ref bool __result)
@@ -126,7 +145,7 @@ namespace Hexed.Core
                     break;
 
                 case InternalSettings.FrameAndPingMode.Realistic:
-                    int Random = Utils.Random.Next(6, 17);
+                    int Random = Encryption.Random.Next(6, 17);
                     __result = Convert.ToInt16(Random);
                     break;
             }
@@ -159,7 +178,7 @@ namespace Hexed.Core
                     break;
 
                 case InternalSettings.FrameAndPingMode.Realistic:
-                    int Random = Utils.Random.Next(100, 170);
+                    int Random = Encryption.Random.Next(100, 170);
                     __result = (float)1 / Random;
                     break;
             }

@@ -1,4 +1,5 @@
 ﻿using Hexed.Core;
+using Hexed.HexedServer;
 using Hexed.Wrappers;
 using MelonLoader;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace Hexed.Modules
         {
             string OriginalHWID = UnityEngine.SystemInfo.deviceUniqueIdentifier;
             byte[] bytes = new byte[OriginalHWID.Length / 2];
-            Utils.Random.NextBytes(bytes);
+            Encryption.Random.NextBytes(bytes);
             return string.Join("", bytes.Select(it => it.ToString("x2")));
         }
     }

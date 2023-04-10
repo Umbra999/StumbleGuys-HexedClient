@@ -34,61 +34,66 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Analytics">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Firebase.Analytics.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Firebase.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="GameAnalytics">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\GameAnalytics.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\GameAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="GameAnalyticsSDK">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\GameAnalyticsSDK.dll</HintPath>
     </Reference>
     <Reference Include="Il2Cppmscorlib, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppSystem">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppSystem.Core">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.Core.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.Core.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppSystem.Data, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="LiteNetLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\LiteNetLib.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Il2CppSystem.Data.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\MelonLoader.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Photon3Unity3D.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="PhotonDeterministic">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonDeterministic.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonDeterministic.dll</HintPath>
     </Reference>
     <Reference Include="PhotonRealtime">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonRealtime.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonRealtime.dll</HintPath>
     </Reference>
     <Reference Include="PhotonWebSocket">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonWebSocket.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\PhotonWebSocket.dll</HintPath>
     </Reference>
     <Reference Include="quantum.code, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\quantum.code.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\quantum.code.dll</HintPath>
     </Reference>
     <Reference Include="quantum.core, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\quantum.core.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\quantum.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Scopely.Sdk.Analytics.Runtime">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Scopely.Sdk.Analytics.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,66 +104,255 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnhollowerBaseLib">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
     </Reference>
     <Reference Include="UnhollowerRuntimeLib">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnhollowerRuntimeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Unity.Services.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppImageConversionManager">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>E:\Games\Steam\steamapps\common\Stumble Guys\MelonLoader\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HexedServer\Encryption.cs" />
+    <Compile Include="HexedServer\ServerHandler.cs" />
     <Compile Include="Loader\LocalLoader.cs" />
     <Compile Include="Core\AssemblyInfo.cs" />
     <Compile Include="Core\Patching.cs" />
     <Compile Include="Core\InternalSettings.cs" />
     <Compile Include="Loader\RemoteLoader.cs" />
-    <Compile Include="Loader\EventHandler.cs" />
+    <Compile Include="Loader\Load.cs" />
     <Compile Include="Modules\ConfigHandler.cs" />
     <Compile Include="Modules\EventHandler.cs" />
     <Compile Include="Modules\GUIHandler.cs" />
     <Compile Include="Modules\HWIDSpoof.cs" />
     <Compile Include="Modules\KeyBindHandler.cs" />
+    <Compile Include="Modules\MiscHandler.cs" />
     <Compile Include="Modules\MovementHandler.cs" />
     <Compile Include="Modules\MusicHandler.cs" />
     <Compile Include="Modules\OperationHandler.cs" />

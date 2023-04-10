@@ -16,7 +16,7 @@ namespace Hexed.Wrappers
             API,
         }
 
-        public static void Log(object obj, LogsType Type)
+        public static void Log(object obj, LogsType Type = LogsType.Clean)
         {
             string log = obj.ToString().Replace("\a", "a").Replace("\u001B[", "u001B[");
             Console.ForegroundColor = ConsoleColor.Blue;
