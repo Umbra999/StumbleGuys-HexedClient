@@ -53,6 +53,7 @@ namespace Hexed.Loader
             Patching.ApplyPatches();
             ConfigHandler.Init();
             InjectClasses();
+            LoadEarlyModules();
 
             WaitForUI().Start();
         }
@@ -69,9 +70,6 @@ namespace Hexed.Loader
 
         public static void OnApplicationQuit()
         {
-            MelonPreferences.Save();
-            ConfigHandler.SaveConfig();
-
             Process.GetCurrentProcess().Kill();
         }
 
@@ -88,6 +86,7 @@ namespace Hexed.Loader
             ClassInjector.RegisterTypeInIl2Cpp<MiscHandler>();
             ClassInjector.RegisterTypeInIl2Cpp<KeyBindHandler>();
             ClassInjector.RegisterTypeInIl2Cpp<GUIHandler>();
+            ClassInjector.RegisterTypeInIl2Cpp<MovementHandler>();
         }
 
         private static void LoadClasses()
@@ -101,6 +100,7 @@ namespace Hexed.Loader
             Hexed.AddComponent<MiscHandler>();
             Hexed.AddComponent<KeyBindHandler>();
             Hexed.AddComponent<GUIHandler>();
+            Hexed.AddComponent<MovementHandler>();
         }
 
         private static void LoadModules()

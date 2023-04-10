@@ -21,14 +21,20 @@
             High = 3
         }
 
+        // Internal
+        public static bool GUIEnabled = true;
+
+        // Config
+        public static bool AltUser = false;
+        public static bool NoProperties = false;
         public static short FakePingValue = 0;
         public static float FakeFrameValue = 1000;
         public static int FakeLatencyValue = 69;
         public static bool PhotonNameSpoof = false;
         public static string PhotonNameSpoofName = "Hexed";
-        public static bool AltUser = true;
-        public static bool NoProperties = false;
-        public static bool GUIEnabled = true;
+        public static bool AntiBotLobby = false;
+
+        // Logs
         public static bool DebugLogOpRaise = false;
         public static bool DebugLogOnEvent = false;
         public static bool DebugLogSendOp = false;

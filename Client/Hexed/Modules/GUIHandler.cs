@@ -26,9 +26,13 @@ namespace Hexed.Modules
 
             if (GUI.Button(new Rect(30, 140, 150, 20), "Force Master")) PhotonHelper.GetCurrentRoom().SetMasterClient(PhotonHelper.GetCurrentUser());
 
-            //InternalSettings.FakePingValue = (short)GUI.HorizontalSlider(new Rect(30, 145, 150, 30), InternalSettings.FakePingValue, 0, short.MaxValue);
+            InternalSettings.DebugLogOpRaise = GUI.Toggle(new Rect(30, 165, 150, 30), InternalSettings.DebugLogOpRaise, "Raise Log");
 
-            //InternalSettings.FakeFrameValue = GUI.HorizontalSlider(new Rect(30, 160, 150, 30), InternalSettings.FakeFrameValue, 0, 1000);
+            InternalSettings.DebugLogSendOp = GUI.Toggle(new Rect(30, 190, 150, 30), InternalSettings.DebugLogSendOp, "Operation Log");
+
+            InternalSettings.DebugLogOnEvent = GUI.Toggle(new Rect(30, 215, 150, 30), InternalSettings.DebugLogOnEvent, "Event Log");
+
+            InternalSettings.AntiBotLobby = GUI.Toggle(new Rect(30, 240, 150, 30), InternalSettings.AntiBotLobby, "Anti Bot");
         }
     }
 }

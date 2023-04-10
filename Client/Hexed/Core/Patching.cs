@@ -6,6 +6,7 @@ using Hexed.Modules;
 using Hexed.Wrappers;
 using MelonLoader;
 using Photon.Realtime;
+using Quantum;
 using Stumble;
 using System;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Reflection;
 using UnhollowerBaseLib;
 using Unity.Services.Analytics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Hexed.Core
 {
@@ -114,6 +116,9 @@ namespace Hexed.Core
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerLeftRoom)), GetPatch(nameof(OnPlayerLeftRoomPrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnPlayerPropertiesUpdate)), GetPatch(nameof(OnPlayerPropertiesUpdatePrefix)));
             CreatePatch(typeof(InRoomCallbacksContainer).GetFromMethod(nameof(InRoomCallbacksContainer.OnRoomPropertiesUpdate)), GetPatch(nameof(OnRoomPropertiesUpdatePrefix)));
+            CreatePatch(typeof(MultiplayerRoomManager).GetFromMethod(nameof(MultiplayerRoomManager.HandleMatchmaking)), GetPatch(nameof(HandleMatchmakingPrefix)));
+            //CreatePatch(typeof(MovementSystem).GetFromMethod(nameof(MovementSystem.HandleJump)), GetPatch(nameof(HandleJumpPrefix)));
+            //CreatePatch(typeof(MovementSystem).GetFromMethod(nameof(MovementSystem.HandleCommonMove)), GetPatch(nameof(HandleCommonMovePrefix)));
         }
 
         private static void AllowBoolPostfix(ref bool __result)
@@ -209,10 +214,17 @@ namespace Hexed.Core
 
         }
 
+        private static void HandleMatchmakingPrefix(MultiplayerRoomManager __instance)
+        {
+            if (InternalSettings.AntiBotLobby && PhotonHelper.GetCurrentRoom() != null && PhotonHelper.GetCurrentUser().IsMaster())
+            {
+                Wrappers.Logger.Log("Extended Timer to prevent Bot Lobby", Wrappers.Logger.LogsType.Protection);
+                __instance._searchTimer += 61f;
+            }
+        }
+
         private static bool SendOperationPrefix(byte __0, Il2CppSystem.Collections.Generic.Dictionary<byte, Il2CppSystem.Object> __1, SendOptions __2)
         {
-            if (InternalSettings.DebugLogSendOp) Wrappers.Logger.LogOperation(__0, __1, __2);
-
             switch (__0)
             {
                 case 253: // OpRaise
@@ -231,6 +243,8 @@ namespace Hexed.Core
                     if (InternalSettings.NoProperties) OperationHandler.DisableProperties226And252(__1);
                     break;
             }
+
+            if (InternalSettings.DebugLogSendOp) Wrappers.Logger.LogOperation(__0, __1, __2);
 
             return true;
         }

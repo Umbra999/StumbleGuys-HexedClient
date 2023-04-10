@@ -347,7 +347,7 @@
     <Compile Include="Core\InternalSettings.cs" />
     <Compile Include="Loader\RemoteLoader.cs" />
     <Compile Include="Loader\Load.cs" />
-    <Compile Include="Modules\ConfigHandler.cs" />
+    <Compile Include="Core\ConfigHandler.cs" />
     <Compile Include="Modules\EventHandler.cs" />
     <Compile Include="Modules\GUIHandler.cs" />
     <Compile Include="Modules\HWIDSpoof.cs" />

@@ -1,15 +1,13 @@
-﻿using Quantum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using UnityEngine;
 
 namespace Hexed.Modules
 {
-    internal class MovementHandler
+    internal class MovementHandler : MonoBehaviour
     {
-        public static void Update()
+        public MovementHandler(IntPtr ptr) : base(ptr) { }
+
+        public void Update()
         {
 
         }

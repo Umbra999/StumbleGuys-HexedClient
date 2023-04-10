@@ -13,10 +13,10 @@ namespace Hexed.Modules
 
             if (!File.Exists("Hexed\\Config.ini")) File.Create("Hexed\\Config.ini");
 
-            LoadConfig();
+            SetInternalValuesFromConfig();
         }
 
-        public static void LoadConfig()
+        public static void SetInternalValuesFromConfig()
         {
             Ini = new IniFile("Hexed\\Config.ini");
 
@@ -27,17 +27,7 @@ namespace Hexed.Modules
             InternalSettings.FrameSpoof = (InternalSettings.FrameAndPingMode)Ini.GetInt("Toggles", "FrameSpoofMode");
             InternalSettings.PhotonNameSpoof = Ini.GetBool("Toggles", "PhotonNameSpoof");
             InternalSettings.PhotonNameSpoofName = Ini.GetString("Toggles", "PhotonNameSpoofName");
-        }
-
-        public static void SaveConfig()
-        {
-            Ini.SetBool("Toggles", "NoProperties", InternalSettings.NoProperties);
-            Ini.SetBool("Toggles", "AltUser", InternalSettings.AltUser);
-            Ini.SetInt("Toggles", "LatencySpoofMode", (int)InternalSettings.LatencySpoof);
-            Ini.SetInt("Toggles", "PingSpoofMode", (int)InternalSettings.PingSpoof);
-            Ini.SetInt("Toggles", "FrameSpoofMode", (int)InternalSettings.FrameSpoof);
-            Ini.SetBool("Toggles", "PhotonNameSpoof", InternalSettings.PhotonNameSpoof);
-            Ini.SetString("Toggles", "PhotonNameSpoofName", InternalSettings.PhotonNameSpoofName);
+            InternalSettings.AntiBotLobby = Ini.GetBool("Toggles", "AntiBotLobby");
         }
     }
 }
