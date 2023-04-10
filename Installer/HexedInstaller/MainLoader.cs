@@ -13,8 +13,8 @@ namespace HexedInstaller
             Console.WriteLine("");
             Console.WriteLine("Select your Stumble Guys.exe");
 
-            Task.Run(() => PathInstalling());
-            Thread.Sleep(-1);
+            Task t = Task.Run(PathInstalling);
+            t.Wait();
         }
 
         public static async Task PathInstalling()
@@ -32,7 +32,7 @@ namespace HexedInstaller
                 if (!Directory.Exists(path + "\\Mods")) Directory.CreateDirectory(path + "\\Mods");
                 else if (File.Exists(path + "\\Mods\\HexedLoader.dll")) File.Delete(path + "\\Mods\\HexedLoader.dll");
 
-                if (File.Exists(path + "\\MelonLoader")) File.Delete(path + "\\MelonLoader");
+                if (Directory.Exists(path + "\\MelonLoader")) Directory.Delete(path + "\\MelonLoader", true);
 
                 if (File.Exists(path + "\\TempMelon.zip")) File.Delete(path + "\\TempMelon.zip");
 
@@ -53,8 +53,7 @@ namespace HexedInstaller
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Hexed Installed");
-                await Task.Delay(5000);
-                Environment.Exit(0);
+                await Task.Delay(3000);
             }
             else
             {

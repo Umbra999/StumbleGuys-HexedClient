@@ -35,7 +35,7 @@ namespace HexedInstaller.HexedServer
 
         private static async Task<string> FetchTime()
         {
-            HttpClient Client = new HttpClient(new HttpClientHandler { UseCookies = false });
+            HttpClient Client = new(new HttpClientHandler { UseCookies = false });
             Client.DefaultRequestHeaders.Add("User-Agent", "Hexed");
 
             HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Get, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TZXJ2ZXIvVGltZQ=="));
@@ -48,7 +48,7 @@ namespace HexedInstaller.HexedServer
         {
             string Timestamp = await FetchTime();
 
-            HttpClient Client = new HttpClient(new HttpClientHandler { UseCookies = false });
+            HttpClient Client = new(new HttpClientHandler { UseCookies = false });
             Client.DefaultRequestHeaders.Add("User-Agent", "Hexed");
 
             HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Post, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TZXJ2ZXIvSXNWYWxpZA=="))
@@ -72,7 +72,7 @@ namespace HexedInstaller.HexedServer
             HttpClient Client = new HttpClient(new HttpClientHandler { UseCookies = false });
             Client.DefaultRequestHeaders.Add("User-Agent", "Hexed");
 
-            HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Post, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TdHVtYmxlR3V5c3QvR2V0TG9hZGVy"))
+            HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Post, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TdHVtYmxlR3V5cy9HZXRMb2FkZXI="))
             {
                 Content = new StringContent(JsonConvert.SerializeObject(new { Auth = Encryption.EncryptAuthKey(Key, Timestamp, "HBL7", HWID) }), Encoding.UTF8, "application/json")
             };
@@ -93,7 +93,7 @@ namespace HexedInstaller.HexedServer
             HttpClient Client = new HttpClient(new HttpClientHandler { UseCookies = false });
             Client.DefaultRequestHeaders.Add("User-Agent", "Hexed");
 
-            HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Post, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TdHVtYmxlR3V5c3QvR2V0TWVsb24="))
+            HttpRequestMessage Payload = new HttpRequestMessage(HttpMethod.Post, Encryption.FromBase64("aHR0cDovLzYyLjY4Ljc1LjUyOjk5OS9TdHVtYmxlR3V5cy9HZXRNZWxvbg=="))
             {
                 Content = new StringContent(JsonConvert.SerializeObject(new { Auth = Encryption.EncryptAuthKey(Key, Timestamp, "XDSA", HWID) }), Encoding.UTF8, "application/json")
             };

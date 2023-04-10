@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "klXsCL/JPNEkOkJh0pLpXzsXWJhMvT1B66uFBM754oqry6gCqnIz762GehZq5xSfsazKtqsp+OcZHITAJn40Gg==",
+  "dgSpecHash": "zFqMXXhcVk3Lu6SRv1D3fOKXs+mQ47SXNXVCCan/MGivSdpwQFkY0Mmij/txlx8sgf8ofbcSc0jv4AaHxO7V6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Umbra\\Documents\\GitHub\\StumbleGuys-HexedClient\\Installer\\HexedInstaller\\HexedInstaller.csproj",
+  "projectFilePath": "D:\\Github Repos\\StumbleGuys-HexedClient\\Installer\\HexedInstaller\\HexedInstaller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Umbra\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Umbra\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
