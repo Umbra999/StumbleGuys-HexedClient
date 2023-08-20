@@ -339,8 +339,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HexedServer\Encryption.cs" />
-    <Compile Include="HexedServer\ServerHandler.cs" />
     <Compile Include="Loader\LocalLoader.cs" />
     <Compile Include="Core\AssemblyInfo.cs" />
     <Compile Include="Core\Patching.cs" />
